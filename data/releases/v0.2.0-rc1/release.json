@@ -1,0 +1,20 @@
+{
+  "county_count": 67,
+  "files": {
+    "county_inputs.csv": "6fa53bcae6aebb15e51b2e5cd110893316c8c9cb9974d45874df1af5410a9019",
+    "county_inputs.metadata.json": "de259915f086fe21dae11d621b7ea8bd332a4016fad9905b5217c28d2f503981",
+    "pa_counties.geojson": "9ccf58ca98baf16f9e8fbd9b9c1ac3a9027d09968fbaeb326df4eedd04a4fbb5",
+    "pa_counties.metadata.json": "c683f3fef8be00f327f36ce07a7d31035f45e1aee73c9856a7d5aca411a3a260",
+    "sources.json": "c5de15aa14c79af0b9d79dfdd5fab66c8f9c33ada27b24af6b8cb5cdf5413cf8"
+  },
+  "methods": {
+    "county_inputs.csv": "pa-public-svi-hospital-presence-v1",
+    "pa_counties.geojson": "pa-display-boundaries-v1"
+  },
+  "portfolio_url": "https://suseelkrishna.onrender.com/",
+  "release_id": "v0.2.0-rc1",
+  "research_paper_url": "https://suseelkrishna.onrender.com/static/reports/pennsylvania-health-equity-masters-paper.fdd9caa6e888.pdf",
+  "reuse_notes": "Source: CDC/ATSDR, CMS, U.S. Census Bureau. No government endorsement. Boundaries are statistical, not legal land descriptions.",
+  "runtime_python": "3.12.14",
+  "status": "public candidate; not published"
+}

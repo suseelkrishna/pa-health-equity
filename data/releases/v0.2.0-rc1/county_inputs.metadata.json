@@ -1,0 +1,62 @@
+{
+  "county_audit": {
+    "counties_with_facilities": 58,
+    "counties_with_zero_facilities": 9,
+    "duplicate_rows_ignored_after_identity_check": 0,
+    "source_rows": 188,
+    "unique_facilities_by_type": {
+      "Acute Care - Veterans Administration": 7,
+      "Acute Care Hospitals": 133,
+      "Childrens": 5,
+      "Critical Access Hospitals": 17,
+      "Psychiatric": 26
+    },
+    "unique_facility_ids": 188,
+    "zero_facility_counties": [
+      "Cameron",
+      "Forest",
+      "Juniata",
+      "Northumberland",
+      "Perry",
+      "Pike",
+      "Snyder",
+      "Sullivan",
+      "Wyoming"
+    ]
+  },
+  "county_match": "Case-insensitive alphanumeric normalization of CMS County/Parish against the validated county_name by five-digit FIPS; unmatched facility labels fail.",
+  "identification": "Two separate measures from the broader study; no composite or reproduction of historical POS findings.",
+  "inputs": [
+    {
+      "checksum_sha256": "32c06917ac844ef6bfb1dd75834b9880da6ce8c0290eba81bd97f85f2a27bdca",
+      "local_filename": "data/raw/SVI_2022_Pennsylvania_county.csv",
+      "notes": "Official Pennsylvania-relative 2022 county file; 67 counties; preserve RPL_THEMES and its approved 100-times transformation.",
+      "provider": "CDC/ATSDR SVI",
+      "release_date": "2024-05-21",
+      "retrieval_date": "2026-10-16",
+      "size_bytes": 51884,
+      "status": "downloaded_verified",
+      "url": "https://svi.cdc.gov/Documents/Data/2022/csv/states_counties/Pennsylvania_county.csv"
+    },
+    {
+      "archive_member": "Hospital_General_Information.csv",
+      "archive_sha256": "0e8e9e1f64872d01102a9cb29223ab0c32eab87a42533b4486627e0ccb45c877",
+      "checksum_sha256": "e3c290c3953d8cf7609a3e51740c9a1a3836f97268ee5b1143ec4e85787854a3",
+      "local_filename": "data/raw/CMS_Hospital_General_Information_2026-02-25.csv",
+      "notes": "Extracted only the requested hospital general information table from the verified official snapshot archive.",
+      "provider": "Centers for Medicare & Medicaid Services (CMS), Provider Data Catalog",
+      "release_date": "2026-02-25",
+      "retrieval_date": "2026-10-16",
+      "status": "downloaded_verified_archive_member",
+      "url": "https://data.cms.gov/provider-data/sites/default/files/dataset-archives/theme/hospitals/hospitals_2026-02-25.zip"
+    }
+  ],
+  "method_id": "pa-public-svi-hospital-presence-v1",
+  "output_file": "county_inputs.csv",
+  "output_sha256": "6fa53bcae6aebb15e51b2e5cd110893316c8c9cb9974d45874df1af5410a9019",
+  "row_count": 67,
+  "transformations": {
+    "hospital_count": "Count distinct CMS Facility ID values by matched Pennsylvania county; include every Hospital Type present in the snapshot.",
+    "svi_score_0_100": "100 * official Pennsylvania-relative RPL_THEMES; preserved from the validated export without recalculation."
+  }
+}
