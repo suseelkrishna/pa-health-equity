@@ -21,6 +21,7 @@ st.html("""<style>
 st.title("Pennsylvania, county by county")
 st.write("Explore social vulnerability and hospital presence across Pennsylvania's 67 counties. Choose a measure on the map, then view both measures for a county.")
 st.caption("Sources: CDC/ATSDR SVI 2022 (2018–2022 ACS) · CMS February 25, 2026")
+st.info("CDC/ATSDR source data is freely available from the [agency website](https://svi.cdc.gov/). This independently developed project is not endorsed by CDC, ATSDR, HHS, or the U.S. Government.")
 with st.expander("Research note: this dashboard and the original study"):
     st.write("This dashboard explores two measures from the broader Pennsylvania health-equity study. The paper's Priority Opportunity Score (POS) findings are historical research and are not reproduced by these two separate measures.")
 
