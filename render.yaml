@@ -1,5 +1,6 @@
 services:
   - type: web
+    plan: free
     name: pennsylvania-health-equity-dashboard
     runtime: python
     buildCommand: python -m pip install -r requirements.lock
