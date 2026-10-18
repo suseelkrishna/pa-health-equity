@@ -1,10 +1,12 @@
 # Pennsylvania, county by county
 
+**[Open the live dashboard](https://pa-health-equity.onrender.com/)**
+
 Explore **Pennsylvania-relative social vulnerability** and **hospital presence** across 67 counties. This dashboard explores two measures from the broader health-equity study. It does not reproduce the paper's Priority Opportunity Score (POS) findings or create a combined score or priority ranking.
 
 ![Public dashboard overview](docs/dashboard-desktop.jpg)
 
-[Research paper](https://suseelkrishna.onrender.com/static/reports/pennsylvania-health-equity-masters-paper.fdd9caa6e888.pdf) · [Portfolio](https://suseelkrishna.onrender.com/). The paper destination matches the [portfolio project page](https://suseelkrishna.onrender.com/work/pennsylvania-health-equity-dashboard/) (verified October 17, 2026). No live dashboard URL or software license has been assigned.
+[Research paper](https://suseelkrishna.onrender.com/static/reports/pennsylvania-health-equity-masters-paper.fdd9caa6e888.pdf) · [Portfolio](https://suseelkrishna.onrender.com/). The paper destination matches the [portfolio project page](https://suseelkrishna.onrender.com/work/pennsylvania-health-equity-dashboard/) (verified October 17, 2026). No software license has been assigned.
 
 ## Setup and verification
 
